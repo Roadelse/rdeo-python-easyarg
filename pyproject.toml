@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "easyarg"
+name = "rdee-easyarg"
 authors = [{name = "Roadelse", email = "roadelse@qq.com"}]
 version = "24.11.23"
 license = {file = "LICENSE"}
@@ -12,3 +12,6 @@ dynamic = ["description"]
 
 [project.urls]
 Home = "https://github.com/Roadelse/rdee-python-easyarg"
+
+[tool.flit.module]
+name = "easyarg"
