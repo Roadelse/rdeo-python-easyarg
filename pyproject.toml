@@ -4,11 +4,11 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "rdee-easyarg"
+version = "24.11.29"
 authors = [{name = "Roadelse", email = "roadelse@qq.com"}]
-version = "24.11.23"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
-dynamic = ["description"]
+dynamic = [ "description"]
 
 [project.urls]
 Home = "https://github.com/Roadelse/rdee-python-easyarg"

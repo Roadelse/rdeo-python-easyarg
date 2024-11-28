@@ -5,7 +5,8 @@ import sys
 import argparse
 import functools
 import inspect
-from typing import Callable, get_args
+from typing import Callable, get_args, Optional
+import importlib
 
 
 class _MyArgParser(argparse.ArgumentParser):
@@ -79,13 +80,13 @@ class EasyArg:
             return wrapper
         return decorator
 
-    def parse(self):
+    def parse(self, args: Optional[list[str]] = None):
         """
         Last Update: @2024-11-23 14:40:31
         ---------------------------------
         Parse arguments and call corresponding function
         """
-        args = self.parser.parse_args()
+        args = self.parser.parse_args(args)
         kwargs = {key: value for key, value in vars(args).items() if key != 'command' and value is not None}
 
         if args.command is None:

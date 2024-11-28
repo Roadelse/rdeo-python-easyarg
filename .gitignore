@@ -1,7 +1,8 @@
 
 __pycache__/
 
-wf.*
 ade.*
+ade
 
 /dist/
+/dev/
