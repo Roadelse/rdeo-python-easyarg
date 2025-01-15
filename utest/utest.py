@@ -18,7 +18,11 @@ def add(x: int, y: int = 0) -> int:
 
 @ea.command()
 def mul(a: float | str, B: float, c: float = 1.0) -> float:
-    """Multiply numbers"""
+    """
+    Multiply numbers
+
+    Last Update: @2025-01-15 22:09:36
+    """
     print(f"{(a * B * c)=}")
 
 
